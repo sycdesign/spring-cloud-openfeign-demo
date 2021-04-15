@@ -21,7 +21,7 @@ public class UserOrderController {
 
     @GetMapping("getUserName1")
     public void getUserName(){
-       log.info(feignClientController.getUserClient().getUserName("100"));
+        log.info(feignClientController.getUserClient().getUserName("100"));
     }
 
     @GetMapping("getUserAge")

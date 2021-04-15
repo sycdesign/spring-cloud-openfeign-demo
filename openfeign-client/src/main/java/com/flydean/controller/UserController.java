@@ -18,7 +18,9 @@ public class UserController {
     private UserClient userClient;
 
     @GetMapping("getUserName2")
-    public void getUserName(){
-        log.info(userClient.getUserName("100"));
+    public String getUserName(){
+        String userName = userClient.getUserName("100");
+        log.info(userName);
+        return userName;
     }
 }
